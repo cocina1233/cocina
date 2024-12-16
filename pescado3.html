@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta: Ensalada César</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+           .galeria-recetas {
+            display: flex; /* Hace que los elementos estén en línea */
+            flex-wrap: nowrap; /* Evita que las recetas se envuelvan */
+            overflow-x: auto; /* Activa desplazamiento horizontal */
+            overflow-y: hidden; /* Desactiva desplazamiento vertical */
+            padding: 10px;
+            gap: 10px; /* Espaciado entre elementos */
+            background-color: #fff;
+            border-top: 2px solid #ccc;
+        }
+
+        .galeria-recetas::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .galeria-recetas::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        .galeria-recetas::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .receta {
+            flex: 0 0 auto; /* Evita que los elementos cambien de tamaño */
+            width: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .receta img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        header h2 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    color: blue
+}
+        
+        .receta-detail {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .receta-detail img {
+            width: 58%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade sombra a la imagen */
+            border-radius: 8px; /* Opcional: redondea las esquinas de la imagen */
+     
+
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>
+             <i class="fas fa-utensils icon1 chef-utensils"></i>
+        Recetas de Cocina
+            <i class="fas fa-book icon1 cook-book"></i>
+        </h1>
+        <h2>
+
+           <i class="fas fa-fish icon-fish"></i>
+            Pescado
+             <i class="fas fa-fish icon-fish"></i>
+            
+        </h2>
+
+        <div class="navbar">
+            
+   <a href="index.html">Inicio</a>
+    <a href="picantefinal.html">Picante</a>
+    <a href="ensaladafinal.html">Ensaladas</a>
+    <a href="pescadofinal.html">Pescado</a>
+    <a href="reposteriafinal.html">Repostería</a>
+    <a href="postrefinal.html">Postres</a>
+
+    </header>
+    <div class="receta-detail">
+        <center>
+            <h3>Ceviche de Camarón</h3>
+        <img src="imagen13.jpg" alt="Ensalada César">
+        </center>
+        <h3>Ingredientes</h3>
+        <ul>
+            <li>500 g de camarón crudo, pelado y desvenado</li>
+            <li>Jugo de 4 limones</li>
+            <li>1 cebolla morada, picada</li>
+            <li>2 tomates, picados</li>
+            <li>1 pepino, picado</li>
+            <li>Cilantro fresco, picado</li>
+            <li>Sal y pimienta al gusto</li>
+           
+         </ul>
+        <h2>Instrucciones</h2>
+        <ol>
+            <li><strong>Cocinar camarón: </strong> Cocina los camarones en agua hirviendo durante 2-3 minutos hasta que estén rosados. Enfría rápidamente en agua con hielo para detener la cocción. Escurre.</li>
+            <li><strong>Marinar:  </strong>Coloca los camarones en un bol grande y cubre con el jugo de limón. Deja marinar durante 15-20 minutos.</li>
+            <li><strong>Añadir vegetales: </strong> Agrega la cebolla, tomates, pepino y cilantro al bol con los camarones. Mezcla bien.</li>
+            <li><strong>Sazonar: </strong> Añade sal y pimienta al gusto. Sirve frío.</li>
+            
+          </ol>
+    </div>
+     <section class="galeria-recetas">
+        <!-- Aquí se colocan las 22 imágenes con anclaje -->
+        <article class="receta">
+            <a href="ensalada1.html">
+                <div class="overlay">
+                    <h2>Ensalada César</h2>
+                </div>
+                <img src="imagen1.jpg" alt="Ensalada cesar">
+            </a>
+        </article>
+        <article class="receta">
+            <a href="picante1.html">
+                <div class="overlay">
+                    <h2>Tacos de Carnitas</h2>
+                </div>
+                <img src="imagen2.jpg" alt="Receta 2">
+            </a>
+        </article>
+        <article class="receta">
+            <a href="picante2.html">
+                <div class="overlay">
+                    <h2>Alitas de Pollo al Estilo Buffalo</h2>
+                </div>
+                <img src="imagen3.jpg" alt="Receta 3">
+            </a>
+        </article>
+        <article class="receta">
+            <a href="picante3.html">
+                <div class="overlay">
+                    <h2>Salsa de Tomate Picante</h2>
+                </div>
+                <img src="imagen4.jpg" alt="Receta 4">
+            </a>
+        </article>
+        <article class="receta">
+            <a href="picante4.html">
+                <div class="overlay">
+                    <h2> Chili con Carne</h2>
+                </div>
+                <img src="imagen5.jpg" alt="Receta 5">
+            </a>
+        </article>
+        <article class="receta">
+            <a href="picante5.html">
+                <div class="overlay">
+                    <h2> Sopes Picantes</h2>
+                </div>
+                <img src="imagen6.jpg" alt="Receta 6">
+            </a>
+        </article>
+         <article class="receta">
+            <a href="ensalada2.html">
+                <div class="overlay">
+                    <h2>Ensalada Caprese</h2>
+                </div>
+                <img src="imagen7.jpg" alt="Receta 7">
+            </a>
+        </article>
+        <article class="receta">
+            <a href="ensalada3.html">
+                <div class="overlay">
+                    <h2>Ensalada Griega</h2>
+                </div>
+                <img src="imagen8.jpg" alt="Receta 8">
+            </a>
+        </article>
+        <article class="receta">
+            <a href="ensalada4.html">
+                <div class="overlay">
+                    <h2>Ensalada de Atún</h2>
+                </div>
+                <img src="imagen9.jpg" alt="Receta 9">
+            </a>
+        </article>
+         <article class="receta">
+            <a href="ensalada5.html">
+                <div class="overlay">
+                    <h2>Ensalada de Quinoa</h2>
+                </div>
+                <img src="imagen10.jpg" alt="Receta 10">
+            </a>
+        </article>
+        <article class="receta">
+                <a href="pescado1.html">
+                    <div class="overlay">
+                        <h2>Filetes de Salmón a la Parrilla</h2>
+                    </div>
+                    <img src="imagen11.jpg" alt="Receta 11">
+                </a>
+            </article>
+            <article class="receta">
+                <a href="pescado2.html">
+                    <div class="overlay">
+                        <h2>Tacos de Pescado</h2>
+                    </div>
+                    <img src="imagen12.jpg" alt="Receta 12">
+                </a>
+            </article>
+            <article class="receta">
+                <a href="pescado3.html">
+                    <div class="overlay">
+                        <h2>Ceviche de Camarón</h2>
+                    </div>
+                    <img src="imagen13.jpg" alt="Receta 13">
+                </a>
+            </article>
+            <article class="receta">
+                <a href="pescado4.html">
+                    <div class="overlay">
+                        <h2>Bacalao a la Vizcaína</h2>
+                    </div>
+                    <img src="imagen14.jpg" alt="Receta 14">
+                </a>
+            </article>
+            <article class="receta">
+                <a href="pescado5.html">
+                    <div class="overlay">
+                        <h2>Sopa de Mariscos</h2>
+                    </div>
+                    <img src="imagen15.jpg" alt="Receta 15">
+                </a>
+            </article>
+             <article class="receta">
+                <a href="reposteria1.html">
+                    <div class="overlay">
+                        <h2>Brownies de Chocolate</h2>
+                    </div>
+                    <img src="imagen16.jpg" alt="Receta 16">
+                </a>
+            </article>
+            <article class="receta">
+                <a href="reposteria2.html">
+                    <div class="overlay">
+                        <h2>Galletas de Chispas de Chocolate</h2>
+                    </div>
+                    <img src="imagen17.jpg" alt="Receta 17">
+                </a>
+            </article>
+            <article class="receta">
+                <a href="reposteria3.html">
+                    <div class="overlay">
+                        <h2>Pastel de Zanahoria</h2>
+                    </div>
+                    <img src="imagen18.jpg" alt="Receta 18">
+                </a>
+            </article>
+            <article class="receta">
+                <a href="reposteria4.html">
+                    <div class="overlay">
+                        <h2>Muffins de Arándano</h2>
+                    </div>
+                    <img src="imagen19.jpg" alt="Receta 19">
+                </a>
+            </article>
+            <article class="receta">
+                <a href="reposteria5.html">
+                    <div class="overlay">
+                        <h2>Tarta de Limón</h2>
+                    </div>
+                    <img src="imagen20.jpg" alt="Receta 20">
+                </a>
+            </article>
+</body>
+</html>

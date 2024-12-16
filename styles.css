@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    display: inline-block;
+}
+
+.icon1 {
+    position: absolute;
+    font-size: 1em; /* Tamaño del icono */
+    color: #333; /* Color del icono */
+}
+.icon2 {
+    color: red; /* Cambia el color a rojo solo para los nuevos iconos */
+    z-index: 1; /* Controla la superposición si es necesario */
+}
+.icon-carrot {
+    color: orange; /* Color naranja para el icono de zanahoria */
+}
+
+.icon-lettuce {
+    color: green; /* Color verde para el icono de lechuga */
+}
+
+.icon-fish {
+    color: blue; /* Color azul para el icono de pescado */
+}
+
+.icon-pastry-hat {
+    color: pink; 
+}
+
+.chef-utensils{
+    top: 0.1em; /* Ajusta la posición según sea necesario */
+    left: -1em; /* Ajusta la posición según sea necesario */
+}
+.icon-chocolate {
+    text-align: center;
+}
+
+.icon-chocolate i {
+    font-size: 100px; /* Tamaño del ícono */
+    color: #6f4f28; /* Color marrón para simular chocolate */
+    background-color: #4e2a1a; /* Fondo marrón oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto 3D */
+}
+
+.cook-book {
+    top: 0.1em; /* Ajusta la posición según sea necesario */
+    right: -1em; /* Ajusta la posición según sea necesario */
+}
+.flame {
+    top: -1.5em; /* Ajusta la posición según sea necesario */
+    left: -1.5em; /* Ajusta la posición según sea necesario */
+}
+
+/* Estilo específico para el icono de chili */
+.chili {
+    top: -1.5em; /* Ajusta la posición según sea necesario */
+    right: -1.5em; /* Ajusta la posición según sea necesario */
+
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex; /* Disposición en línea */
+    justify-content: center; /* Centrar los botones */
+    background: #ccc; /* Color de fondo de la barra */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo para los enlaces en la barra de navegación */
+.navbar a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: #fff; /* Color del texto */
+    background: #777; /* Color de fondo del botón */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 0 5px; /* Espaciado entre botones */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño del texto */
+    transition: background 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo al pasar el cursor sobre los enlaces */
+.navbar a:hover {
+    background: #ffa500; /* Color de fondo al pasar el cursor */
+    color: #fff; /* Color del texto (se mantiene blanco) */
+}
+
+main {
+    padding: 2em;
+}
+
+.galeria-recetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.receta {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.receta img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    display: block;
+}
+
+.receta .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.receta:hover .overlay {
+    opacity: 1;
+}
+
+.receta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.detalle-receta {
+    display: none;
+    margin: 2em 0;
+}
+
+.detalle-receta h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.detalle-receta img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.detalle-receta h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.detalle-receta ul,
+.detalle-receta ol {
+    margin: 0 0 1em 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #f5f5f5;
+}
+
+footer p {
+    margin: 0;
+}
